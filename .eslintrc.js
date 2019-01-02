@@ -25,8 +25,20 @@ module.exports = {
     'generator-star-spacing': 'off',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 要求或禁止函数圆括号之前有一个空格
+    'space-before-function-paren': 'off',
+    // 将import放到代码最前边
+    'import/first': 'off',
+    // 禁止使用多个空格
+    'no-multi-spaces': 'off',
+    // 禁止使用没有赋值的 new 以避免产生副作用
+    'no-new': 'off',
+    // 禁止tabs
+    'no-tabs': 'off',
     // 强制使用一致的缩进
     'indent': 0,
+    // 要求或不允许分号代替ASI
+    'semi': 0,
     // 要求构造函数首字母大写 （mgjd人家第三方SDK构造小写的我能有什么办法）
     'new-cap': 0
   },
