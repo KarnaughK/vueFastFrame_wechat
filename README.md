@@ -1,7 +1,6 @@
 # vue_fast_frame_wechat
 
-> vue微信\(^o^)/~
-
+> 快速启动框架，使用 vue-cli 创建，包含 vuex vue-router axios 等
 ## Build Setup
 
 ``` bash
