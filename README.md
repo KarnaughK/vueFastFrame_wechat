@@ -1,2 +1,21 @@
-# fastVueFrame_wechat
-微信H5端， vue项目快速启动框架
+# vue_fast_frame_wechat
+
+> vue微信\(^o^)/~
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
