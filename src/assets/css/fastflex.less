@@ -1,7 +1,6 @@
 .fp {
   display: flex;
 }
-
 .fc {
   display: flex;
   flex-direction: column;
@@ -9,7 +8,10 @@
   &_c:extend(.fc) {
     align-items: center;
   }
-  &_e:extend(.fc) {
+  &_fs:extend(.fc) {
+    align-items: flex-start;
+  }
+  &_fe:extend(.fc) {
     align-items: flex-end;
   }
   &_s:extend(.fc) {
@@ -19,7 +21,6 @@
     align-items: baseline;
   }
 }
-
 .fr {
   display: flex;
   flex-direction: row;
@@ -28,7 +29,10 @@
   &_c:extend(.fr) {
     align-items: center;
   }
-  &_e:extend(.fr) {
+  &_fs:extend(.fr) {
+    align-items: flex-start;
+  }
+  &_fe:extend(.fr) {
     align-items: flex-end;
   }
   &_s:extend(.fr) {
@@ -38,7 +42,6 @@
     align-items: baseline;
   }
 }
-
 .frr {
   display: flex;
   flex-direction: row-reverse;
@@ -46,7 +49,10 @@
   &_c:extend(.frr) {
     align-items: center;
   }
-  &_e:extend(.frr) {
+  &_fs:extend(.frr) {
+    align-items: flex-start;
+  }
+  &_fe:extend(.frr) {
     align-items: flex-end;
   }
   &_s:extend(.frr) {
@@ -56,7 +62,6 @@
     align-items: baseline;
   }
 }
-
 .fs {
   &_fs {
     align-self: flex-start;
@@ -71,12 +76,14 @@
     align-self: flex-end;
   }
 }
-
 .fj {
   &_s {
     justify-content: stretch;
   }
-  &_e {
+  &_fs {
+    justify-content: flex-start;
+  }
+  &_fe {
     justify-content: flex-end;
   }
   &_c {

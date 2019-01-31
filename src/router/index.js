@@ -1,15 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import routes from '@/router/router'
+import beforeEach from '@/router/beforeEach'
 
-Vue.use(Router)
+Vue.use(Router);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+// 路由列表
+let router = new Router({
+  // 模式
+  // mode: 'history',
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
     }
-  ]
-})
+
+    return {x: 0, y: 0}
+  }
+});
+
+// 开屏授权页逻辑 暂无
+router.beforeEach(beforeEach);
+
+export default router;
